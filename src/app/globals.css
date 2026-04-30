@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Material Design 3 — Warm Amber palette.
+ * Tokens follow MD3 role naming so swapping the seed only touches this block.
+ */
+:root {
+  --md-primary: #8b5000;
+  --md-on-primary: #ffffff;
+  --md-primary-container: #ffddb5;
+  --md-on-primary-container: #2c1700;
+
+  --md-secondary: #735944;
+  --md-on-secondary: #ffffff;
+  --md-secondary-container: #ffddb5;
+  --md-on-secondary-container: #281806;
+
+  --md-tertiary: #5b6236;
+  --md-on-tertiary: #ffffff;
+  --md-tertiary-container: #dfe7b0;
+  --md-on-tertiary-container: #181e00;
+
+  --md-error: #ba1a1a;
+  --md-on-error: #ffffff;
+
+  --md-background: #fff8f4;
+  --md-on-background: #211a14;
+
+  --md-surface: #fff8f4;
+  --md-on-surface: #211a14;
+  --md-surface-variant: #f1dfcc;
+  --md-on-surface-variant: #504538;
+
+  --md-surface-container-lowest: #ffffff;
+  --md-surface-container-low: #fbf2e8;
+  --md-surface-container: #f5ecdf;
+  --md-surface-container-high: #efe6d9;
+  --md-surface-container-highest: #e9e0d3;
+
+  --md-outline: #82746a;
+  --md-outline-variant: #d4c3b3;
+
+  --md-shadow: 30 25 22;
+
+  --md-radius-sm: 0.5rem;
+  --md-radius-md: 0.875rem;
+  --md-radius-lg: 1.25rem;
+  --md-radius-xl: 1.75rem;
+  --md-radius-full: 9999px;
+
+  --md-elev-1: 0 1px 2px rgba(var(--md-shadow) / 0.06), 0 1px 3px rgba(var(--md-shadow) / 0.05);
+  --md-elev-2: 0 2px 6px rgba(var(--md-shadow) / 0.07), 0 4px 12px rgba(var(--md-shadow) / 0.06);
+  --md-elev-3: 0 6px 18px rgba(var(--md-shadow) / 0.09), 0 12px 28px rgba(var(--md-shadow) / 0.08);
+}
+
+.dark {
+  --md-primary: #ffb871;
+  --md-on-primary: #4a2800;
+  --md-primary-container: #6a3b00;
+  --md-on-primary-container: #ffddb5;
+
+  --md-secondary: #e2c1a3;
+  --md-on-secondary: #402c1a;
+  --md-secondary-container: #59422e;
+  --md-on-secondary-container: #ffddb5;
+
+  --md-tertiary: #c4ca94;
+  --md-on-tertiary: #2d340c;
+  --md-tertiary-container: #434a20;
+  --md-on-tertiary-container: #dfe7b0;
+
+  --md-error: #ffb4ab;
+  --md-on-error: #690005;
+
+  --md-background: #19120b;
+  --md-on-background: #ede0d2;
+
+  --md-surface: #19120b;
+  --md-on-surface: #ede0d2;
+  --md-surface-variant: #504538;
+  --md-on-surface-variant: #d4c3b3;
+
+  --md-surface-container-lowest: #120c06;
+  --md-surface-container-low: #211a14;
+  --md-surface-container: #261d14;
+  --md-surface-container-high: #31271e;
+  --md-surface-container-highest: #3d3228;
+
+  --md-outline: #9c8d80;
+  --md-outline-variant: #504538;
+
+  --md-shadow: 0 0 0;
+}
+
+/*
+ * @theme inline lets us expose CSS variables through Tailwind's design-token
+ * system without baking the value at build time, so theme swaps are live.
+ */
+@theme inline {
+  --color-primary: var(--md-primary);
+  --color-on-primary: var(--md-on-primary);
+  --color-primary-container: var(--md-primary-container);
+  --color-on-primary-container: var(--md-on-primary-container);
+
+  --color-secondary: var(--md-secondary);
+  --color-on-secondary: var(--md-on-secondary);
+  --color-secondary-container: var(--md-secondary-container);
+  --color-on-secondary-container: var(--md-on-secondary-container);
+
+  --color-tertiary: var(--md-tertiary);
+  --color-on-tertiary: var(--md-on-tertiary);
+  --color-tertiary-container: var(--md-tertiary-container);
+  --color-on-tertiary-container: var(--md-on-tertiary-container);
+
+  --color-md-error: var(--md-error);
+  --color-on-error: var(--md-on-error);
+
+  --color-background: var(--md-background);
+  --color-on-background: var(--md-on-background);
+
+  --color-surface: var(--md-surface);
+  --color-on-surface: var(--md-on-surface);
+  --color-surface-variant: var(--md-surface-variant);
+  --color-on-surface-variant: var(--md-on-surface-variant);
+
+  --color-surface-low: var(--md-surface-container-low);
+  --color-surface-container: var(--md-surface-container);
+  --color-surface-container-high: var(--md-surface-container-high);
+  --color-surface-container-highest: var(--md-surface-container-highest);
+
+  --color-outline: var(--md-outline);
+  --color-outline-variant: var(--md-outline-variant);
+
+  --radius-md3-sm: var(--md-radius-sm);
+  --radius-md3-md: var(--md-radius-md);
+  --radius-md3-lg: var(--md-radius-lg);
+  --radius-md3-xl: var(--md-radius-xl);
+
+  --shadow-elev-1: var(--md-elev-1);
+  --shadow-elev-2: var(--md-elev-2);
+  --shadow-elev-3: var(--md-elev-3);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body {
+  background-color: var(--md-background);
+  color: var(--md-on-background);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth color transitions when toggling theme — but skip during initial paint. */
+html.theme-transition,
+html.theme-transition * {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+/* Stronger, MD3-ish focus ring */
+:focus-visible {
+  outline: 2px solid var(--md-primary);
+  outline-offset: 3px;
+  border-radius: var(--md-radius-sm);
+}
+
+/* Subtle scrollbar (chromium) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--md-outline-variant);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-outline);
+}
+
+/* Reduced-motion friendliness */
+@media (prefers-reduced-motion: reduce) {
+  html.theme-transition,
+  html.theme-transition * {
+    transition: none !important;
+  }
+}
