@@ -24,7 +24,7 @@ export function ProjectsTab() {
       <Section
         eyebrow="Projects"
         title="Selected work"
-        description="A focused slice of recent work — interfaces and shipped tools. Click any card to read more."
+        description="A focused slice of recent work: interfaces and shipped tools. Click any card to read more."
       >
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((project) => (

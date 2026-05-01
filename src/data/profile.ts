@@ -44,19 +44,19 @@ export type Profile = {
 
 /**
  * Edit this object to personalize the Introduction tab.
- * Every field is wired into a UI component — no markup changes needed.
+ * Every field is wired into a UI component, no markup changes needed.
  */
 export const profile: Profile = {
   name: "Josh Cohen",
   monogram: "JC",
   headline: "UX/UI Designer & Front-End Developer",
   subtitle:
-    "Working at the intersection of human-centered design and technical implementation — turning user needs into intuitive, functional software.",
+    "Working at the intersection of human-centered design and technical implementation, turning user needs into intuitive, functional software.",
   availability: "Open to new opportunities",
   // TODO: replace with city/region you want public, or remove the field entirely.
   location: "United States",
   about: [
-    "Cognitive Science graduate with a Specialization in Design and Interaction, bringing hands-on experience in UX/UI design and front-end development, API programming and integration, full-stack development, and research-driven product development. I work at the intersection of human-centered design and technical implementation — turning user needs into intuitive, functional software solutions.",
+    "Cognitive Science graduate with a Specialization in Design and Interaction, bringing hands-on experience in UX/UI design and front-end development, API programming and integration, full-stack development, and research-driven product development. I work at the intersection of human-centered design and technical implementation, turning user needs into intuitive, functional software solutions.",
     "Currently developing a web-based onboarding, offboarding, and change-request management system, integrating front-end interfaces with back-end services and database architecture to support automated user workflows. I focus on translating complex requirements into clear, efficient user experiences with attention to usability, scalability, and real-world application.",
     "My day-to-day spans Microsoft Office, Adobe Creative Cloud, and a front-end foundation in HTML, CSS, and JavaScript, along with Python and collaborative development environments. I've worked with backend systems, databases, and the Microsoft Graph API, and use Figma, Docker, npm, and Claude Code regularly. I'm currently expanding into AI-assisted and LLM-driven development to push workflow automation and system usability further.",
     "Looking for opportunities in UX/UI and front-end development or product-focused software roles where I can build practical, interactive systems as part of a collaborative team.",
@@ -134,10 +134,10 @@ export const profile: Profile = {
   ],
   experience: [
     {
-      role: "DevOps — UX/UI Designer & Front-End Developer",
+      role: "DevOps: UX/UI Designer & Front-End Developer",
       org: "GoCloud Inc.",
       location: "Miami, FL",
-      timeframe: "February 2026 — Present",
+      timeframe: "February 2026 - Present",
       bullets: [
         "Built a web-based onboarding, offboarding, and change-request system with state-driven UI logic, improving usability and workflow efficiency while supporting product validation and investor presentations.",
         "Collaborated with a back-end developer and lead software engineer to integrate front-end components with a Spring Boot backend, database, and Microsoft Graph API for automated user management.",
@@ -149,7 +149,7 @@ export const profile: Profile = {
       role: "Operations Team Intern",
       org: "GoCloud Inc.",
       location: "Miami, FL",
-      timeframe: "June 2024 — September 2024",
+      timeframe: "June 2024 - September 2024",
       bullets: [
         "Worked with the operations team on automated onboarding and offboarding workflows using the Rewst platform.",
         "Researched and prototyped custom workflow solutions to streamline IT operations and reduce manual processing effort.",
@@ -159,9 +159,9 @@ export const profile: Profile = {
   education: [
     {
       school: "University of California, San Diego",
-      degree: "B.S. Cognitive Science — Specialization in Design and Interaction",
+      degree: "B.S. Cognitive Science, Specialization in Design and Interaction",
       location: "San Diego, CA",
-      timeframe: "September 2023 — September 2025",
+      timeframe: "September 2023 - September 2025",
       gpa: "GPA 3.535 · Major GPA 3.741",
       focus:
         "Focused on designing and evaluating interactive systems by understanding user behavior through a cognitive science lens.",

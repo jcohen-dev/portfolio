@@ -17,7 +17,7 @@ export function Experience() {
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-semibold text-on-surface">
                   {item.role}{" "}
-                  <span className="text-on-surface-variant">— {item.org}</span>
+                  <span className="text-on-surface-variant">· {item.org}</span>
                 </h3>
                 <span className="text-sm text-on-surface-variant">{item.timeframe}</span>
               </div>
