@@ -62,11 +62,11 @@ export const profile: Profile = {
     "Looking for opportunities in UX/UI and front-end development or product-focused software roles where I can build practical, interactive systems as part of a collaborative team.",
   ],
   facts: [
-    { label: "Role", value: "UX/UI + Front-End" },
+    { label: "Role", value: "UX/UI Designer + Front-End Developer" },
     { label: "Education", value: "University of California, San Diego" },
     { label: "Degree", value: "B.S. Cognitive Science" },
     { label: "Specialization", value: "Design & Interaction" },
-    { label: "Stack", value: "Figma · HTML/CSS/JS · Python" },
+    { label: "Stack", value: "HTML/CSS/JS · Figma · Python" },
     { label: "Status", value: "Open to opportunities" },
   ],
   skills: [
