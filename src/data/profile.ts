@@ -61,12 +61,11 @@ export const profile: Profile = {
     "My day-to-day spans Microsoft Office, Adobe Creative Cloud, and a front-end foundation in HTML, CSS, and JavaScript, along with Python and collaborative development environments. I've worked with backend systems, databases, and the Microsoft Graph API, and use Figma, Docker, npm, and Claude Code regularly. I'm currently expanding into AI-assisted and LLM-driven development to push workflow automation and system usability further.",
     "Looking for opportunities in UX/UI and front-end development or product-focused software roles where I can build practical, interactive systems as part of a collaborative team.",
   ],
-  // TODO: still open to redesigning this panel for more detail. Current pass adds
-  // a dedicated Specialization row so the Design & Interaction track is explicit.
   facts: [
     { label: "Role", value: "UX/UI + Front-End" },
+    { label: "Education", value: "University of California, San Diego" },
     { label: "Degree", value: "B.S. Cognitive Science" },
-    { label: "Specialization", value: "Design & Interaction (UCSD)" },
+    { label: "Specialization", value: "Design & Interaction" },
     { label: "Stack", value: "Figma · HTML/CSS/JS · Python" },
     { label: "Status", value: "Open to opportunities" },
   ],

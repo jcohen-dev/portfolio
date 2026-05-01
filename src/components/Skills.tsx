@@ -10,7 +10,7 @@ export function Skills() {
       title="What I bring to a team"
       description="A blend of UI/UX design, hands-on development, and research-driven product thinking."
     >
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-2">
         {profile.skills.map((group) => (
           <div
             key={group.title}
