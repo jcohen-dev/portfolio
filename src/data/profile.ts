@@ -7,14 +7,19 @@ export type SkillGroup = {
 export type ExperienceItem = {
   role: string;
   org: string;
+  location?: string;
   timeframe: string;
   summary?: string;
+  bullets?: string[];
 };
 
 export type EducationItem = {
   school: string;
-  detail: string;
+  degree: string;
+  location?: string;
   timeframe: string;
+  gpa?: string;
+  focus?: string;
 };
 
 export type Profile = {
@@ -42,84 +47,133 @@ export type Profile = {
  * Every field is wired into a UI component — no markup changes needed.
  */
 export const profile: Profile = {
-  name: "[Your Name]",
-  monogram: "YN",
-  headline: "UI/UX Designer, Developer, and Research-Driven Problem Solver",
+  name: "Josh Cohen",
+  monogram: "JC",
+  headline: "UX/UI Designer & Front-End Developer",
   subtitle:
-    "I design and build interfaces grounded in user research — from clinical tools that help EMTs make faster decisions, to internal forms that quietly remove friction for entire IT teams.",
+    "Working at the intersection of human-centered design and technical implementation — turning user needs into intuitive, functional software.",
   availability: "Open to new opportunities",
+  // TODO: replace with city/region you want public, or remove the field entirely.
   location: "United States",
   about: [
-    "I work at the intersection of design, engineering, and research. My favorite projects start with a real, observable problem — a workflow that's slower than it should be, an interface fighting its users, a question no one has time to answer well.",
-    "I move fluidly between Figma and code. I'll prototype, talk to the people doing the work, and ship something that earns its place. I care less about pixel polish in isolation and more about whether the screen actually changes how someone gets their job done.",
-    "Recent work has spanned medical interfaces for emergency responders and operational tooling for IT/cybersecurity teams. The common thread: research-led decisions, careful interaction design, and clean execution.",
+    "Cognitive Science graduate with a Specialization in Design and Interaction, bringing hands-on experience in UX/UI design and front-end development, API programming and integration, full-stack development, and research-driven product development. I work at the intersection of human-centered design and technical implementation — turning user needs into intuitive, functional software solutions.",
+    "Currently developing a web-based onboarding, offboarding, and change-request management system, integrating front-end interfaces with back-end services and database architecture to support automated user workflows. I focus on translating complex requirements into clear, efficient user experiences with attention to usability, scalability, and real-world application.",
+    "My day-to-day spans Microsoft Office, Adobe Creative Cloud, and a front-end foundation in HTML, CSS, and JavaScript, along with Python and collaborative development environments. I've worked with backend systems, databases, and the Microsoft Graph API, and use Figma, Docker, npm, and Claude Code regularly. I'm currently expanding into AI-assisted and LLM-driven development to push workflow automation and system usability further.",
+    "Looking for opportunities in UX/UI and front-end development or product-focused software roles where I can build practical, interactive systems as part of a collaborative team.",
   ],
+  // TODO: still open to redesigning this panel for more detail. Current pass adds
+  // a dedicated Specialization row so the Design & Interaction track is explicit.
   facts: [
-    { label: "Discipline", value: "Design + Dev" },
-    { label: "Specialty", value: "Research-led UI" },
-    { label: "Toolkits", value: "Figma · React · Python" },
-    { label: "Status", value: "Available" },
+    { label: "Role", value: "UX/UI + Front-End" },
+    { label: "Degree", value: "B.S. Cognitive Science" },
+    { label: "Specialization", value: "Design & Interaction (UCSD)" },
+    { label: "Stack", value: "Figma · HTML/CSS/JS · Python" },
+    { label: "Status", value: "Open to opportunities" },
   ],
   skills: [
     {
-      title: "UI/UX Design",
-      summary: "Interaction design, information architecture, and high-fidelity prototypes.",
-      items: ["User Research", "Wireframing", "Prototyping", "Usability Testing", "Design Systems"],
+      title: "UX/UI Design",
+      summary: "Designing interfaces grounded in human-centered principles and real user needs.",
+      items: [
+        "Wireframing",
+        "Prototyping",
+        "Design Systems",
+        "Usability Evaluation",
+        "Human-Centered Design",
+      ],
     },
     {
-      title: "Frontend Development",
-      summary: "Production-grade interfaces with modern React tooling.",
-      items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Accessibility"],
+      title: "Front-End Development",
+      summary: "Building responsive, accessible interfaces with a strong vanilla-web foundation.",
+      items: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "State-Driven UI Logic",
+        "Component-Driven Interfaces",
+      ],
     },
     {
-      title: "API & Integration",
-      summary: "Connecting tools, services, and data so the right thing happens.",
-      items: ["REST APIs", "Python", "Data Pipelines", "Auth Flows", "Automation"],
+      title: "API & Backend Integration",
+      summary: "Wiring front-ends to backend services so the right thing happens behind the screen.",
+      items: [
+        "REST APIs",
+        "Microsoft Graph API",
+        "Backend Service Integration",
+        "Database Integration",
+      ],
     },
     {
-      title: "Research-Driven Practice",
-      summary: "Translating evidence into design and implementation decisions.",
-      items: ["User Interviews", "Heuristic Review", "Synthesis", "Decision Frameworks"],
+      title: "Design & Interaction Research",
+      summary: "Cognitive science applied to designing and evaluating interactive systems.",
+      items: [
+        "Interaction Design",
+        "User Behavior Analysis",
+        "Cognitive Science Methods",
+        "Iterative Evaluation",
+      ],
     },
   ],
   tools: [
     "Figma",
+    "Microsoft Office",
+    "Photoshop",
+    "Premiere",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
     "Python",
     "React",
     "Next.js",
-    "Photoshop",
-    "Premiere",
-    "Microsoft Office",
-    "TypeScript",
-    "Tailwind",
+    "Tailwind CSS",
+    "Docker",
+    "npm",
     "Git",
+    "Claude Code",
+    "Microsoft Graph API",
   ],
   experience: [
     {
-      role: "UI/UX Designer & Developer",
-      org: "Independent",
-      timeframe: "Recent",
-      summary:
-        "Design and ship interfaces for clinical and operational use cases — combining user research, prototyping in Figma, and production builds in React/Next.js.",
+      role: "DevOps — UX/UI Designer & Front-End Developer",
+      org: "GoCloud Inc.",
+      location: "Miami, FL",
+      timeframe: "February 2026 — Present",
+      bullets: [
+        "Built a web-based onboarding, offboarding, and change-request system with state-driven UI logic, improving usability and workflow efficiency while supporting product validation and investor presentations.",
+        "Collaborated with a back-end developer and lead software engineer to integrate front-end components with a Spring Boot backend, database, and Microsoft Graph API for automated user management.",
+        "Refined features and workflows using Docker, npm, and Claude Code to enhance the user experience and streamline development.",
+        "Currently developing AI-enhanced features to automate and scale onboarding and offboarding workflows.",
+      ],
     },
     {
-      role: "Research Collaborator",
-      org: "Cross-functional teams",
-      timeframe: "Ongoing",
-      summary:
-        "Partner with subject-matter experts (medical, IT/cybersecurity) to translate domain knowledge into usable, evidence-backed product decisions.",
+      role: "Operations Team Intern",
+      org: "GoCloud Inc.",
+      location: "Miami, FL",
+      timeframe: "June 2024 — September 2024",
+      bullets: [
+        "Worked with the operations team on automated onboarding and offboarding workflows using the Rewst platform.",
+        "Researched and prototyped custom workflow solutions to streamline IT operations and reduce manual processing effort.",
+      ],
     },
   ],
   education: [
     {
-      school: "[Your School]",
-      detail: "[Degree or program] — replace with your education detail.",
-      timeframe: "[Years]",
+      school: "University of California, San Diego",
+      degree: "B.S. Cognitive Science — Specialization in Design and Interaction",
+      location: "San Diego, CA",
+      timeframe: "September 2023 — September 2025",
+      gpa: "GPA 3.535 · Major GPA 3.741",
+      focus:
+        "Focused on designing and evaluating interactive systems by understanding user behavior through a cognitive science lens.",
     },
   ],
   contact: {
+    // TODO: replace with your real email before publishing
     email: "you@example.com",
+    // TODO: replace with your LinkedIn URL or remove this field
     linkedin: "https://linkedin.com/in/your-handle",
+    // TODO: replace with your GitHub URL or remove this field
     github: "https://github.com/your-handle",
   },
 };

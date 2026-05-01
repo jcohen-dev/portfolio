@@ -16,7 +16,20 @@ export function Education() {
               <h3 className="text-base font-semibold text-on-surface">{item.school}</h3>
               <span className="text-sm text-on-surface-variant">{item.timeframe}</span>
             </div>
-            <p className="mt-1 text-sm text-on-surface-variant">{item.detail}</p>
+            <p className="mt-1 text-sm font-medium text-on-surface">{item.degree}</p>
+            {item.location && (
+              <p className="mt-0.5 text-xs uppercase tracking-[0.14em] text-on-surface-variant">
+                {item.location}
+              </p>
+            )}
+            {item.focus && (
+              <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">{item.focus}</p>
+            )}
+            {item.gpa && (
+              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+                {item.gpa}
+              </p>
+            )}
           </article>
         ))}
       </div>

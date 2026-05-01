@@ -16,12 +16,28 @@ export function Experience() {
             <div className="rounded-(--radius-md3-lg) border border-outline-variant bg-surface-container p-5 shadow-(--shadow-elev-1)">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-semibold text-on-surface">
-                  {item.role} <span className="text-on-surface-variant">— {item.org}</span>
+                  {item.role}{" "}
+                  <span className="text-on-surface-variant">— {item.org}</span>
                 </h3>
                 <span className="text-sm text-on-surface-variant">{item.timeframe}</span>
               </div>
+              {item.location && (
+                <p className="mt-0.5 text-xs uppercase tracking-[0.14em] text-on-surface-variant">
+                  {item.location}
+                </p>
+              )}
               {item.summary && (
                 <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">{item.summary}</p>
+              )}
+              {item.bullets && item.bullets.length > 0 && (
+                <ul className="mt-3 space-y-2">
+                  {item.bullets.map((b, j) => (
+                    <li key={j} className="flex gap-2 text-sm leading-relaxed text-on-surface-variant">
+                      <span aria-hidden className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
               )}
             </div>
           </li>

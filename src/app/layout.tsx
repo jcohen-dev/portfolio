@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "[Your Name] — Portfolio",
+  title: "Josh Cohen — Portfolio",
   description:
-    "UI/UX Designer, Developer, and Research-Driven Problem Solver. Selected work, skills, and a way to get in touch.",
+    "Josh Cohen — UX/UI Designer & Front-End Developer. Selected work, skills, and a way to get in touch.",
 };
 
 export const viewport: Viewport = {
