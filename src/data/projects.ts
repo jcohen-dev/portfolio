@@ -86,5 +86,6 @@ export const projects: Project[] = [
     // TODO: add real links once you decide what to publish (Figma file,
     // case-study writeup, demo video, internal wiki page, etc.).
     links: [],
+    image: "/images/gocloud-servicedesk.png",
   },
 ];
