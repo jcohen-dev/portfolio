@@ -66,8 +66,8 @@ export const profile: Profile = {
     { label: "Education", value: "University of California, San Diego" },
     { label: "Degree", value: "B.S. Cognitive Science" },
     { label: "Specialization", value: "Design & Interaction" },
-    { label: "Stack", value: "HTML/CSS/JS · Figma · Python" },
-    { label: "Status", value: "Open to opportunities" },
+    { label: "Stack", value: "HTML/CSS/JS · Python · Figma" },
+    { label: "Status", value: "Open to new opportunities" },
   ],
   skills: [
     {

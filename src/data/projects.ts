@@ -58,11 +58,11 @@ export const projects: Project[] = [
   },
   {
     id: "it-request-form",
-    title: "Onboarding, Offboarding & Change-Request Management System",
+    title: "GoCloud ServiceDesk",
     kind: "Internal Tool",
     year: "2026 — Present",
     summary:
-      "A web-based system that streamlines IT user lifecycle workflows — onboarding, offboarding, and change requests — with state-driven UI and automated backend integrations.",
+      "Onboarding, offboarding, and change-request management system — a web-based platform for IT user lifecycle workflows, with state-driven UI and automated backend integrations.",
     what_it_does:
       "Replaces disconnected, manual request flows with a single web-based interface for managing user onboarding, offboarding, and change requests across IT and operations. State-driven UI logic adapts the form based on request type, surfacing only the relevant fields. Back-end integrations automate the downstream actions through a Spring Boot service, the project database, and the Microsoft Graph API. Built to support both day-to-day operations and product validation milestones — including investor presentations at GoCloud.",
     role: "UX/UI Designer & Front-End Developer",
