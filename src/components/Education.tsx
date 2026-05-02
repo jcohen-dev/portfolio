@@ -4,12 +4,9 @@ import { Section } from "@/components/Section";
 export function Education() {
   if (profile.education.length === 0) return null;
 
-  // One entry → let the card fill the row; multiple → 2-column grid.
-  const gridCols = profile.education.length === 1 ? "" : "md:grid-cols-2";
-
   return (
     <Section id="education" eyebrow="Education" title="Background">
-      <div className={`grid gap-4 ${gridCols}`}>
+      <div className="grid gap-4">
         {profile.education.map((item, i) => (
           <article
             key={i}

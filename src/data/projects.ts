@@ -72,10 +72,10 @@ export const projects: Project[] = [
       "HTML",
       "CSS",
       "JavaScript",
-      "Microsoft Graph API",
       "Docker",
       "npm",
       "Claude Code",
+      "Microsoft Graph API",
     ],
     // Outcomes intentionally empty: better blank than fabricated. Add real
     // metrics here when you can verify them, e.g.:

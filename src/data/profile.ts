@@ -56,17 +56,17 @@ export const profile: Profile = {
   // TODO: replace with city/region you want public, or remove the field entirely.
   location: "United States",
   about: [
-    "Cognitive Science graduate with a Specialization in Design and Interaction, bringing hands-on experience in UX/UI design and front-end development, API programming and integration, full-stack development, and research-driven product development. I work at the intersection of human-centered design and technical implementation, turning user needs into intuitive, functional software solutions.",
-    "Currently developing a web-based onboarding, offboarding, and change-request management system, integrating front-end interfaces with back-end services and database architecture to support automated user workflows. I focus on translating complex requirements into clear, efficient user experiences with attention to usability, scalability, and real-world application.",
-    "My day-to-day spans Microsoft Office, Adobe Creative Cloud, and a front-end foundation in HTML, CSS, and JavaScript, along with Python and collaborative development environments. I've worked with backend systems, databases, and the Microsoft Graph API, and use Figma, Docker, npm, and Claude Code regularly. I'm currently expanding into AI-assisted and LLM-driven development to push workflow automation and system usability further.",
-    "Looking for opportunities in UX/UI and front-end development or product-focused software roles where I can build practical, interactive systems as part of a collaborative team.",
+    "Cognitive Science graduate with a Specialization in Design and Interaction, bringing hands-on experience in UX/UI design and front-end development, API programming and integration, full-stack development, and research-driven product development. Working at the intersection of human-centered design and technical implementation to turn user needs into intuitive, functional software.",
+    "Currently developing a web-based onboarding, offboarding, and change-request management system, integrating front-end interfaces with back-end services and database architecture to support automated user workflows. Skilled at translating complex requirements into clear, efficient user experiences with a focus on usability, scalability, and real-world application.",
+    "Strong front-end foundation in HTML, CSS, JavaScript, and TypeScript, working primarily in React, Next.js, and Tailwind CSS. Comfortable across the development environment with Docker, npm, Git, and Claude Code, and experienced in integrating backend systems, databases, and the Microsoft Graph API. My approach is design-led and research-driven: I identify what needs to change in an application, work out the right direction across styling, structure, and functionality, then implement and iterate quickly with AI-assisted development. Also fluent in Adobe Creative Cloud and Microsoft Office, and currently going deeper into LLM-driven development to push workflow automation and system usability further.",
+    "Seeking opportunities in UX/UI and front-end development or product-focused software roles, where I can build practical, interactive systems as part of a collaborative team.",
   ],
   facts: [
     { label: "Role", value: "UX/UI Designer + Front-End Developer" },
     { label: "Education", value: "University of California, San Diego" },
     { label: "Degree", value: "B.S. Cognitive Science" },
     { label: "Specialization", value: "Design & Interaction" },
-    { label: "Stack", value: "HTML/CSS/JS · Python · Figma" },
+    { label: "Stack", value: "TypeScript · React/Next.js · Tailwind" },
     { label: "Status", value: "Open to new opportunities" },
   ],
   skills: [
@@ -114,15 +114,10 @@ export const profile: Profile = {
     },
   ],
   tools: [
-    "Figma",
-    "Microsoft Office",
-    "Photoshop",
-    "Premiere",
     "HTML",
     "CSS",
     "JavaScript",
     "TypeScript",
-    "Python",
     "React",
     "Next.js",
     "Tailwind CSS",
@@ -130,7 +125,12 @@ export const profile: Profile = {
     "npm",
     "Git",
     "Claude Code",
+    "Figma",
     "Microsoft Graph API",
+    "Python",
+    "Microsoft Office",
+    "Photoshop",
+    "Premiere",
   ],
   experience: [
     {
@@ -162,17 +162,21 @@ export const profile: Profile = {
       degree: "B.S. Cognitive Science, Specialization in Design and Interaction",
       location: "San Diego, CA",
       timeframe: "September 2023 - September 2025",
-      gpa: "GPA 3.535 · Major GPA 3.741",
       focus:
-        "Focused on designing and evaluating interactive systems by understanding user behavior through a cognitive science lens.",
+        "Focused on designing and evaluating interactive systems by understanding user behavior through a cognitive science lens. The program was project-driven, with each one moving research findings directly into working prototypes. That same research-to-implementation loop drives the systems I ship today.",
+    },
+    {
+      school: "College of San Mateo",
+      degree: "Associate in Arts in Psychology for Transfer",
+      location: "San Mateo, CA",
+      timeframe: "August 2021 - May 2023",
+      focus:
+        "Psychology and communication studies on a deliberate transfer track to UCSD's Cognitive Science Design and Interaction program, building foundations in human behavior and communication that now anchor my UX/UI and front-end work.",
     },
   ],
   contact: {
-    // TODO: replace with your real email before publishing
-    email: "you@example.com",
-    // TODO: replace with your LinkedIn URL or remove this field
-    linkedin: "https://linkedin.com/in/your-handle",
-    // TODO: replace with your GitHub URL or remove this field
-    github: "https://github.com/your-handle",
+    email: "jcohendev@gmail.com",
+    linkedin: "https://linkedin.com/in/josh-cohen-dev",
+    github: "https://github.com/jcohen-dev",
   },
 };

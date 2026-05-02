@@ -5,7 +5,7 @@ export function About() {
   return (
     <Section id="about" eyebrow="About" title="Designing decisions, not just screens">
       <div className="grid gap-6 md:grid-cols-5">
-        <div className="md:col-span-3 space-y-4 text-base leading-relaxed text-on-surface-variant">
+        <div className="md:col-span-3 space-y-4 text-base leading-relaxed text-pretty text-on-surface-variant">
           {profile.about.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
