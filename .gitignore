@@ -33,3 +33,6 @@ Thumbs.db
 
 # Testing
 coverage/
+
+# Local planning workspace (kept on disk for iteration, not committed)
+.planning/
