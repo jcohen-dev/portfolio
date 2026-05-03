@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import type { Project } from "@/data/projects";
 import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { Chip } from "@/components/Chip";
+import { withBasePath } from "@/lib/asset";
 import {
   CloseIcon,
   ExternalLinkIcon,
@@ -79,14 +80,14 @@ export function ProjectModal({
           {project.image ? (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
-              src={project.image}
+              src={withBasePath(project.image)}
               alt={`${project.title} screenshot`}
               className="aspect-[16/9] w-full object-cover"
             />
           ) : project.gallery && project.gallery.length > 0 ? (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
-              src={project.gallery[0].src}
+              src={withBasePath(project.gallery[0].src)}
               alt={project.gallery[0].alt ?? `${project.title} screenshot`}
               className="aspect-[16/9] w-full object-cover"
             />
@@ -134,7 +135,7 @@ export function ProjectModal({
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={shot.src}
+                      src={withBasePath(shot.src)}
                       alt={shot.alt ?? shot.caption}
                       className="block w-full"
                     />

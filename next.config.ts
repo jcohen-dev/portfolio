@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   assetPrefix: isStaticExport ? "/portfolio" : "",
   reactStrictMode: true,
   images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isStaticExport ? "/portfolio" : "",
+  },
 };
 
 export default nextConfig;

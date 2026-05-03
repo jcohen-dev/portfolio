@@ -5,6 +5,7 @@ import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { Chip } from "@/components/Chip";
 import { ArrowUpRightIcon } from "@/components/Icon";
 import { cn } from "@/lib/cn";
+import { withBasePath } from "@/lib/asset";
 
 export function ProjectCard({
   project,
@@ -31,7 +32,7 @@ export function ProjectCard({
         {project.image ? (
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
-            src={project.image}
+            src={withBasePath(project.image)}
             alt={`${project.title} screenshot`}
             className="aspect-[16/10] w-full object-cover"
           />
