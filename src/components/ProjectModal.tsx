@@ -83,6 +83,13 @@ export function ProjectModal({
               alt={`${project.title} screenshot`}
               className="aspect-[16/9] w-full object-cover"
             />
+          ) : project.gallery && project.gallery.length > 0 ? (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={project.gallery[0].src}
+              alt={project.gallery[0].alt ?? `${project.title} screenshot`}
+              className="aspect-[16/9] w-full object-cover"
+            />
           ) : (
             <PlaceholderImage label={project.title} className="aspect-[16/9] rounded-none border-b border-outline-variant" />
           )}
@@ -112,7 +119,37 @@ export function ProjectModal({
           </header>
 
           <Detail label="What it does" body={project.what_it_does} />
-          <Detail label="My role" body={project.role_detail ?? project.role} />
+          <Detail label="My role" body={project.role_detail ?? project.role} boldFirst />
+
+          {project.gallery && project.gallery.length > 0 && (
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-on-surface-variant">
+                Walkthrough
+              </p>
+              <ul className="mt-3 space-y-6">
+                {project.gallery.map((shot) => (
+                  <li
+                    key={shot.src}
+                    className="overflow-hidden rounded-(--radius-md3-lg) border border-outline-variant bg-surface-container"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={shot.src}
+                      alt={shot.alt ?? shot.caption}
+                      className="block w-full"
+                    />
+                    <div className="px-4 py-3 text-sm leading-relaxed text-on-surface-variant md:px-5 md:py-4">
+                      {shot.title && (
+                        <p className="mb-1 font-semibold text-on-surface">{shot.title}</p>
+                      )}
+                      <p>{shot.caption}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {project.outcomes && project.outcomes.length > 0 && (
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-on-surface-variant">
@@ -172,13 +209,35 @@ export function ProjectModal({
   );
 }
 
-function Detail({ label, body }: { label: string; body: string }) {
+function Detail({
+  label,
+  body,
+  boldFirst = false,
+}: {
+  label: string;
+  body: string;
+  boldFirst?: boolean;
+}) {
+  const paragraphs = body.split(/\n\n+/);
   return (
     <div>
       <p className="text-xs font-semibold uppercase tracking-[0.14em] text-on-surface-variant">
         {label}
       </p>
-      <p className="mt-2 text-sm leading-relaxed text-on-surface md:text-base">{body}</p>
+      <div className="mt-2 space-y-3">
+        {paragraphs.map((p, i) => (
+          <p
+            key={i}
+            className={
+              boldFirst && i === 0
+                ? "text-sm font-semibold text-on-surface md:text-base"
+                : "text-sm leading-relaxed text-on-surface md:text-base"
+            }
+          >
+            {p}
+          </p>
+        ))}
+      </div>
     </div>
   );
 }

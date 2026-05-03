@@ -34,7 +34,7 @@ export function Contact() {
       id="contact"
       eyebrow="Contact"
       title="Let's build something together"
-      description="Open to design, research, and engineering collaborations. The fastest reply will come over email."
+      description="Open to full-time UX/UI and front-end roles, plus interesting product work along the way. Email is the best way to reach me."
     >
       <div className="grid gap-3 md:grid-cols-3">
         {links.map(({ label, value, href, Icon }) => (
