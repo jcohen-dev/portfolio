@@ -92,7 +92,21 @@ export function ProjectModal({
               className="aspect-[16/9] w-full object-cover"
             />
           ) : (
-            <PlaceholderImage label={project.title} className="aspect-[16/9] rounded-none border-b border-outline-variant" />
+            <PlaceholderImage
+              label={project.title}
+              text={project.placeholder?.text}
+              hueA={project.placeholder?.hueA}
+              hueB={project.placeholder?.hueB}
+              gradient={project.placeholder?.gradient}
+              textSizeClass={project.placeholder?.textSizeClass}
+              className="aspect-[16/9] rounded-none border-b border-outline-variant"
+            />
+          )}
+          {project.status === "in_progress" && (
+            <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-surface-container-highest/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-on-surface backdrop-blur">
+              <span aria-hidden className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
+              In Progress
+            </span>
           )}
           <button
             ref={closeRef}

@@ -37,7 +37,21 @@ export function ProjectCard({
             className="aspect-[16/10] w-full object-cover"
           />
         ) : (
-          <PlaceholderImage label={project.title} className="rounded-none border-b border-outline-variant" />
+          <PlaceholderImage
+            label={project.title}
+            text={project.placeholder?.text}
+            hueA={project.placeholder?.hueA}
+            hueB={project.placeholder?.hueB}
+            gradient={project.placeholder?.gradient}
+            textSizeClass={project.placeholder?.textSizeClass}
+            className="rounded-none border-b border-outline-variant"
+          />
+        )}
+        {project.status === "in_progress" && (
+          <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-surface-container-highest/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-on-surface backdrop-blur">
+            <span aria-hidden className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
+            In Progress
+          </span>
         )}
         <div className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-surface-container-highest/90 text-on-surface backdrop-blur transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
           <ArrowUpRightIcon className="h-4 w-4" />
