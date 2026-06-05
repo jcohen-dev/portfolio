@@ -143,8 +143,9 @@ export const profile: Profile = {
       timeframe: "February 2026 - Present",
       bullets: [
         "Built a web-based onboarding, offboarding, and change-request system with state-driven UI logic, improving usability and workflow efficiency while supporting product validation and investor presentations.",
-        "Collaborated with a back-end developer and lead software engineer to integrate front-end components with a Spring Boot back-end, database, and Microsoft Graph API for automated user management.",
-        "Refined features and workflows using Docker, npm, and Claude Code to enhance the user experience and streamline development.",
+        "Supports provisioning across 50+ client companies, reducing each request from 15 to 40 minutes of manual user creation, licensing, and credential handoff down to seconds.",
+        "Collaborated with a back-end developer and lead software engineer to integrate front-end components with a Spring Boot back-end, PostgreSQL database, and Microsoft Graph API for automated user management.",
+        "Developed the front-end with Next.js, React, and TypeScript, orchestrated the full multi-service stack with Docker Compose, and used Claude Code to refine features and streamline development.",
         "Currently developing AI-enhanced features to automate and scale onboarding and offboarding workflows.",
       ],
     },
