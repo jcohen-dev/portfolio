@@ -113,7 +113,7 @@ export function ProjectModal({
             type="button"
             onClick={onClose}
             aria-label="Close project details"
-            className="absolute right-3 top-3 grid h-10 w-10 place-items-center rounded-full bg-surface-container-highest/95 text-on-surface backdrop-blur transition-colors hover:bg-surface-container-highest"
+            className="absolute right-3 top-3 grid h-10 w-10 place-items-center rounded-full bg-surface-container-highest/95 text-on-surface backdrop-blur transition-colors hover:bg-primary-container hover:text-on-primary-container focus-visible:bg-primary-container focus-visible:text-on-primary-container"
           >
             <CloseIcon />
           </button>
