@@ -7,15 +7,16 @@
  * Tokens follow MD3 role naming so swapping the seed only touches this block.
  */
 :root {
-  --md-primary: #8b5000;
+  --md-primary: #b85b0c;
   --md-on-primary: #ffffff;
-  --md-primary-container: #ffddb5;
-  --md-on-primary-container: #2c1700;
+  --md-primary-container: #f4d3b3;
+  --md-on-primary-container: #8a4412;
+  --md-live: var(--md-primary-container);
 
   --md-secondary: #735944;
   --md-on-secondary: #ffffff;
-  --md-secondary-container: #ffddb5;
-  --md-on-secondary-container: #281806;
+  --md-secondary-container: #d6c3a4;
+  --md-on-secondary-container: #45301a;
 
   --md-tertiary: #5b6236;
   --md-on-tertiary: #ffffff;
@@ -25,22 +26,22 @@
   --md-error: #ba1a1a;
   --md-on-error: #ffffff;
 
-  --md-background: #fff8f4;
-  --md-on-background: #211a14;
+  --md-background: #ffffff;
+  --md-on-background: #000000;
 
-  --md-surface: #fff8f4;
-  --md-on-surface: #211a14;
-  --md-surface-variant: #f1dfcc;
-  --md-on-surface-variant: #504538;
+  --md-surface: #ffffff;
+  --md-on-surface: #000000;
+  --md-surface-variant: #c0a890;
+  --md-on-surface-variant: #2a1e0e;
 
-  --md-surface-container-lowest: #ffffff;
-  --md-surface-container-low: #fbf2e8;
-  --md-surface-container: #f5ecdf;
-  --md-surface-container-high: #efe6d9;
-  --md-surface-container-highest: #e9e0d3;
+  --md-surface-container-lowest: #ece4d9;
+  --md-surface-container-low: #d9cab6;
+  --md-surface-container: #c4ac94;
+  --md-surface-container-high: #b69d83;
+  --md-surface-container-highest: #a88f74;
 
-  --md-outline: #82746a;
-  --md-outline-variant: #d4c3b3;
+  --md-outline: #80705c;
+  --md-outline-variant: #a78f6d;
 
   --md-shadow: 30 25 22;
 
@@ -60,6 +61,7 @@
   --md-on-primary: #4a2800;
   --md-primary-container: #6a3b00;
   --md-on-primary-container: #ffddb5;
+  --md-live: #ffb871;
 
   --md-secondary: #e2c1a3;
   --md-on-secondary: #402c1a;
@@ -103,6 +105,7 @@
   --color-on-primary: var(--md-on-primary);
   --color-primary-container: var(--md-primary-container);
   --color-on-primary-container: var(--md-on-primary-container);
+  --color-live: var(--md-live);
 
   --color-secondary: var(--md-secondary);
   --color-on-secondary: var(--md-on-secondary);

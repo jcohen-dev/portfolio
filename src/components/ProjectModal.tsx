@@ -74,8 +74,9 @@ export function ProjectModal({
       />
 
       <div
-        className="relative m-0 max-h-[92vh] w-full max-w-3xl animate-[modalIn_240ms_ease-out] overflow-y-auto rounded-t-(--radius-md3-xl) border border-outline-variant bg-surface shadow-(--shadow-elev-3) sm:m-4 sm:rounded-(--radius-md3-xl)"
+        className="relative m-0 w-full max-w-3xl animate-[modalIn_240ms_ease-out] overflow-hidden rounded-t-(--radius-md3-xl) border border-outline-variant bg-surface shadow-(--shadow-elev-3) sm:m-4 sm:rounded-(--radius-md3-xl)"
       >
+        <div className="max-h-[92vh] overflow-y-auto">
         <div className="relative">
           {project.image ? (
             /* eslint-disable-next-line @next/next/no-img-element */
@@ -104,7 +105,7 @@ export function ProjectModal({
           )}
           {project.status === "in_progress" && (
             <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-surface-container-highest/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-on-surface backdrop-blur">
-              <span aria-hidden className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
+              <span aria-hidden className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-live" />
               In Progress
             </span>
           )}
@@ -216,6 +217,7 @@ export function ProjectModal({
               </div>
             </div>
           )}
+        </div>
         </div>
       </div>
 

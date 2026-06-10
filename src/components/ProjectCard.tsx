@@ -49,7 +49,7 @@ export function ProjectCard({
         )}
         {project.status === "in_progress" && (
           <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-surface-container-highest/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-on-surface backdrop-blur">
-            <span aria-hidden className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
+            <span aria-hidden className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-live" />
             In Progress
           </span>
         )}

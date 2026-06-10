@@ -68,7 +68,7 @@ export function PlaceholderImage({
     >
       <span
         className={cn(
-          "font-display font-semibold tracking-tight text-on-surface/85 mix-blend-luminosity",
+          "font-display font-semibold tracking-tight text-[#ede0d2]/85 mix-blend-luminosity",
           sizeClass
         )}
       >
