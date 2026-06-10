@@ -15,8 +15,12 @@
 
   --md-secondary: #735944;
   --md-on-secondary: #ffffff;
-  --md-secondary-container: #d6c3a4;
-  --md-on-secondary-container: #45301a;
+  --md-secondary-container: #e8d3b6;
+  --md-on-secondary-container: #8a4412;
+
+  /* Chip hover state layers. Light darkens on hover (mirrors dark's emphasis shift). */
+  --md-chip-hover: #dcc197;
+  --md-chip-outline-hover: #e4d1b4;
 
   --md-tertiary: #5b6236;
   --md-on-tertiary: #ffffff;
@@ -68,6 +72,10 @@
   --md-secondary-container: #59422e;
   --md-on-secondary-container: #ffddb5;
 
+  /* Dark keeps its existing hover targets (vivid amber / subtle dark fill). */
+  --md-chip-hover: #6a3b00;
+  --md-chip-outline-hover: #261d14;
+
   --md-tertiary: #c4ca94;
   --md-on-tertiary: #2d340c;
   --md-tertiary-container: #434a20;
@@ -111,6 +119,8 @@
   --color-on-secondary: var(--md-on-secondary);
   --color-secondary-container: var(--md-secondary-container);
   --color-on-secondary-container: var(--md-on-secondary-container);
+  --color-chip-hover: var(--md-chip-hover);
+  --color-chip-outline-hover: var(--md-chip-outline-hover);
 
   --color-tertiary: var(--md-tertiary);
   --color-on-tertiary: var(--md-on-tertiary);

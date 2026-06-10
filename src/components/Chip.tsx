@@ -17,9 +17,9 @@ export function Chip({
   const styles: Record<ChipVariant, string> = {
     filled: "bg-primary text-on-primary",
     outlined:
-      "border border-outline-variant bg-transparent text-on-surface hover:bg-surface-container",
+      "border border-outline-variant bg-transparent text-on-surface hover:bg-chip-outline-hover",
     tonal:
-      "bg-secondary-container text-on-secondary-container hover:bg-primary-container hover:text-on-primary-container",
+      "bg-secondary-container text-on-secondary-container hover:bg-chip-hover",
   };
 
   return (
