@@ -36,3 +36,8 @@ coverage/
 
 # Local planning workspace (kept on disk for iteration, not committed)
 .planning/
+
+# Local-only artifacts (kept on disk as a record, never committed)
+.claude/
+resume.html
+theme-preview.html
